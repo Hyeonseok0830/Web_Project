@@ -56,6 +56,11 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+    $(document).mousemove(function(e){
+        $('.red-ball').css("top", e.pageY);
+        $('.red-ball').css("left", e.pageX);
+    });
+   
    
 })(jQuery); // End of use strict
 
@@ -70,4 +75,5 @@ function stopVideo2() {
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
     iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
 }
+
 

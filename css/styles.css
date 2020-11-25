@@ -41,6 +41,21 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.red-ball{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  background: #e25046;
+  border-radius: 80%;
+  backface-visibility: hidden;
+  
+}
+* {
+  cursor: none;
+  }
 *,
 *::before,
 *::after {
@@ -52,7 +67,10 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
 }
+
+
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
@@ -67,6 +85,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -474,6 +493,7 @@ mark,
 }
 
 .img-fluid {
+  min-width: 100%;
   max-width: 100%;
   height: auto;
 }
