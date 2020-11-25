@@ -68,9 +68,7 @@ html {
   backface-visibility: hidden;
   
 }
-* {
-  cursor: none;
-  }
+
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
