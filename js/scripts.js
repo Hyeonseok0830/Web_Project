@@ -30,10 +30,9 @@
         }
     });
     
-    var video = $("#youtube-player").attr("src");
-    $("#youtube-player").attr("src",""); 
-    $("#youtube-player").attr("src",video);
+    
 
+    
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
@@ -59,4 +58,16 @@
     $(window).scroll(navbarCollapse);
    
 })(jQuery); // End of use strict
+
+function stopVideo1() {
+    var div = document.getElementById("video_slide1");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+}
+
+function stopVideo2() {
+    var div = document.getElementById("video_slide2");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+}
 
