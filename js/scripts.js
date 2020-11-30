@@ -3,14 +3,14 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -29,10 +29,10 @@
             }
         }
     });
-    
-    
 
-    
+
+
+
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
@@ -44,12 +44,33 @@
         offset: 500,
     });
 
+    $("#main").ready(function () {
+        var length = $(".tag-len").length;
+        var element = $("#main");
+        for (var i = 1; i <= length; i++) {
+            $("#my-language" + i).css("color", "#" + (parseInt(Math.random() * 0xffffff)).toString(16));
+            $("#my-language" + i).css("font-size", Math.floor((Math.random() * 20) + 50) + "px");
+            $("#my-language" + i).css("postion", 'static');
+            console.log($( "#my-language" + i ).width());
+            var t = Math.floor((Math.random() *$( "#my-language" + i ).height()+500)-100);
+            var l = Math.floor((Math.random() * $( "#my-language" + i ).width())-100);            
+            console.log("X : " + l + " Y : " + t);
+            $("#my-language" + i).offset({
+                top: $("#main").position().top + t,
+                left: $("#main").position().left + l
+            });
+
+        }
+
+
+    });
+
     // Collapse Navbar
     var navbarCollapse = function () {
-        
+
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
-        }        
+        }
         else {
             $("#mainNav").removeClass("navbar-shrink");
         }
@@ -58,25 +79,25 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-    
-    $(document).mousemove(function(e){
+
+    $(document).mousemove(function (e) {
         $('.red-ball').css("top", e.pageY);
         $('.red-ball').css("left", e.pageX);
     });
-   
-   
+
+
 })(jQuery); // End of use strict
 
 function stopVideo1() {
     var div = document.getElementById("video_slide1");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }
 
 function stopVideo2() {
     var div = document.getElementById("video_slide2");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }
 
 
