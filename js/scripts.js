@@ -44,26 +44,45 @@
         offset: 500,
     });
 
-    $("#main").ready(function () {
-        var length = $(".tag-len").length;
-        var element = $("#main");
-        for (var i = 1; i <= length; i++) {
-            $("#my-language" + i).css("color", "#" + (parseInt(Math.random() * 0xffffff)).toString(16));
-            $("#my-language" + i).css("font-size", Math.floor((Math.random() * 20) + 50) + "px");
-            $("#my-language" + i).css("postion", 'static');
-            console.log($( "#my-language" + i ).width());
-            var t = Math.floor((Math.random() *$( "#my-language" + i ).height()+500)-100);
-            var l = Math.floor((Math.random() * $( "#my-language" + i ).width())-100);            
-            console.log("X : " + l + " Y : " + t);
-            $("#my-language" + i).offset({
-                top: $("#main").position().top + t,
-                left: $("#main").position().left + l
-            });
-
-        }
-
-
+    $(".my-language").click(function () {
+        var id_check = $(this).attr("id");
+        console.log(id_check);
+        var angle = 0;
+        var isStop = false;
+        setInterval(function () {
+            if (!isStop) {
+                angle += 4;
+                if (angle >= 360) {
+                    isStop = true;
+                    angle = 0;
+                }
+                $("#"+id_check).rotate(angle);
+            }
+            else {
+                clearInterval(this);
+            }
+        }, 10);
+        
     });
+
+    // $("#main").ready(function () {
+    //     var length = $(".tag-len").length;
+    //     var element = $("#main");
+    //     for (var i = 1; i <= length; i++) {
+    //         $("#my-language" + i).css("color", "#" + (parseInt(Math.random() * 0xffffff)).toString(16));
+    //         $("#my-language" + i).css("font-size", Math.floor((Math.random() * 20) + 50) + "px");
+    //         $("#my-language" + i).css("postion", 'static');
+    //         console.log($( "#my-language" + i ).width());
+    //         var t = Math.floor((Math.random() *$( "#my-language" + i ).height()+500)-100);
+    //         var l = Math.floor((Math.random() * $( "#my-language" + i ).width())-100);            
+    //         console.log("X : " + l + " Y : " + t);
+    //         $("#my-language" + i).offset({
+    //             top: $("#main").position().top + t,
+    //             left: $("#main").position().left + l
+    //         });
+
+    //     }
+    // });
 
     // Collapse Navbar
     var navbarCollapse = function () {

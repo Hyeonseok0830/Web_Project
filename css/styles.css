@@ -503,6 +503,12 @@ mark,
   height: auto;
 }
 
+.my-language{
+  margin: 1rem 1rem 1rem 1rem;
+  width: auto;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
