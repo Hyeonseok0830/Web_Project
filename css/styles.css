@@ -10456,13 +10456,12 @@ header.masthead {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-color: #f8f9fa;
   background-repeat: no-repeat;
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
