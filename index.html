@@ -1,439 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div class="red-ball"></div>
-    <head>        
-        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>HyeonSeok World</title>
-        
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-  
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Hyeon Seok World</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ml-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#main">Main</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            
-        
-        </header>
-        <!-- Main-->
-        <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-                  <script src='https://code.jquery.com/ui/1.10.4/jquery-ui.js'></script> -->
-        
-        <section class="page-section bg-light" id="main">
-            <div class="container">
-                <div class="text-center" >            
-                    <h2 class="section-heading text-uppercase">돌릴 줄 아는 언어들</h2>                                    
-                    <h3 class="section-subheading text-muted">클릭하면 돌아갑니다.</h3>
-                    <img class="my-language auto-rotation" id = "language-img1" src="assets/img/language/android.png" alt="" >                   
-                    <img class="my-language auto-rotation" id = "language-img2" src="assets/img/language/csharp.png" alt="">
-                    <img class="my-language auto-rotation" id = "language-img4" src="assets/img/language/c.png" alt="">
-                    <img class="my-language auto-rotation" id = "language-img5" src="assets/img/language/c++.png" alt="">
-                    <img class="my-language auto-rotation" id = "language-img8" src="assets/img/language/java.png" alt="">                    
-                    <img class="my-language auto-rotation" id = "language-img7" src="assets/img/language/html.png" alt="">                  
-                    <img class="my-language auto-rotation" id = "language-img6" src="assets/img/language/css.png" alt="">
-                    <img class="my-language auto-rotation" id = "language-img10" src="assets/img/language/js.png" alt="">
-                    <img class="my-language auto-rotation" id = "language-img9" src="assets/img/language/jquery.png" alt="">                    
-                    <img class="my-language auto-rotation" id = "language-img11" src="assets/img/language/nodejs.png" alt="">
-                    
+<div class="red-ball"></div>
 
-                </div>               
-            </div>
-        </section>
+<head>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HyeonSeok World</title>
 
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">개발 프로젝트</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg"+tmeDate.getTime() alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Best_Matching</div>
-                                <div class="portfolio-caption-subheading text-muted">안드로이드 앱</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">PASS</div>
-                                <div class="portfolio-caption-subheading text-muted">마스크 인식 차단기</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">TAKE_PACK</div>
-                                <div class="portfolio-caption-subheading text-muted">안드로이드 앱</div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">National</div>
-                                <div class="portfolio-caption-subheading text-muted">C# 응용 프로그램</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About Me</h2>
-                    <h3 class="section-subheading text-muted">자기 소개</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading" >
-                                <h4>2015년 3월</h4>
-                                <h4 class="subheading">소프트웨어학과 입학</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2017년 11월</h4>
-                                <h4 class="subheading">1종 대형 면허 취득</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2020년 3월</h4>
-                                <h4 class="subheading">프로젝트 수행</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2020년 8월</h4>
-                                <h4 class="subheading">정보처리기사 자격증 취득</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                            </br>
-                                현재도                         
-                                개발중..
-                            </h4>
-                        </div>
-                    </li>
+<body id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Hyeon Seok World</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#main">Main</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact me</a></li>
                 </ul>
             </div>
-        </section>
-        <!-- Contactme-->
-        <section class="section-padding wow fadeInUp delay-05s" id="contact">
-            <div class="container">
-                <div class="row white">
-                    <div class="col-md-8 col-sm-12">
-                        <div class="section-title">
-                            <h2 class="head-title black">Contact Me</h2>
-                            <hr class="botm-line">
-                            <p class="sec-para black"></p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <div class="col-md-4 col-sm-6" style="padding-left:0px;">
-                            <h3 class="cont-title">Email</h3>
-                            <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
-                            
-                            <div class="contact-info">
-                                <form action="" method="post" role="form" class="contactForm">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                            data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>        
-        
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                            data-msg="Please write something for us" placeholder="Message"></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Send</button>
-                                </form>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+
+
+    </header>
+    <!-- Main-->
+    <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+                  <script src='https://code.jquery.com/ui/1.10.4/jquery-ui.js'></script> -->
+
+    <section class="page-section bg-light" id="main">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">돌릴 줄 아는 언어들</h2>
+                <h3 class="section-subheading text-muted">클릭하면 돌아갑니다.</h3>
+                <img class="my-language auto-rotation" id="language-img1" src="assets/img/language/android.png" alt="">
+                <img class="my-language auto-rotation" id="language-img2" src="assets/img/language/csharp.png" alt="">
+                <img class="my-language auto-rotation" id="language-img4" src="assets/img/language/c.png" alt="">
+                <img class="my-language auto-rotation" id="language-img5" src="assets/img/language/c++.png" alt="">
+                <img class="my-language auto-rotation" id="language-img8" src="assets/img/language/java.png" alt="">
+                <img class="my-language auto-rotation" id="language-img7" src="assets/img/language/html.png" alt="">
+                <img class="my-language auto-rotation" id="language-img6" src="assets/img/language/css.png" alt="">
+                <img class="my-language auto-rotation" id="language-img10" src="assets/img/language/js.png" alt="">
+                <img class="my-language auto-rotation" id="language-img9" src="assets/img/language/jquery.png" alt="">
+                <img class="my-language auto-rotation" id="language-img11" src="assets/img/language/nodejs.png" alt="">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">개발 프로젝트</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                        </div>                 
-                        
+                            <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" +tmeDate.getTime()
+                                alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Best_Matching</div>
+                            <div class="portfolio-caption-subheading text-muted">안드로이드 앱</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">PASS</div>
+                            <div class="portfolio-caption-subheading text-muted">마스크 인식 차단기</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">TAKE_PACK</div>
+                            <div class="portfolio-caption-subheading text-muted">안드로이드 앱</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">National</div>
+                            <div class="portfolio-caption-subheading text-muted">C# 응용 프로그램</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-       
-      
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left"> © HyeonSeokWorld 2020</div>                            
-                    <a class="nav-link js-scroll-trigger" href="#main">Main</a>
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact me</a>              
-                </div>
+        </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About Me</h2>
+                <h3 class="section-subheading text-muted"></h3>
             </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Best_Matching</h2>
-                                    <p class="item-intro text-muted">졸업 작품</p>
-                                    <img class="img-fluid d-block mx-auto" src="" alt="" />                            
-                                      <div id="video_slide1" style="position: relative; height:0; padding-bottom: 80.25%;">
-                                        <iframe  width="560" height="315" class = "d-block" src="https://www.youtube.com/embed/ULOZ8Wsoma8?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
-                                        </div>
-                                    <p>풋살 경기를 편리하게 매칭 해주는 안드로이드 앱 입니다.
-                                       </p>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2015년 3월</h4>
+                            <h4 class="subheading">소프트웨어학과 입학</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2017년 11월</h4>
+                            <h4 class="subheading">1종 대형 면허 취득</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2020년 3월</h4>
+                            <h4 class="subheading">프로젝트 수행</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
 
-                                    <ul class="list-inline">
-                                        <li> 3인 팀 작품</li>
-                                        <li> Node.js, MySQL, Android를 이용해 개발</li>
-                                        <li> 회원관리, 지도, 매치, 팀, 고객센터 기능 중 팀과 고객센터 기능을 담당</li>
-                                        <li> 등록된 경기장을 예약할 수 있는 기능 구현</li>
-                                        <li> 지도 로드 시 현재 위치를 기준으로 가장 가까운 마커가 포커스 되는 기능 구현</li>
-                                        <li> 리스트로 경기장을 로드 시 가장 가까운 순으로 정렬되는 기능 구현</li>
-                                        <li> 매칭과 팀을 등록하고 검색 가능</li>
-                                        <li> 팀장, 팀원 기능을 구분하여 구현</li>
-                                        <li> 새로운 팀원 가입 수락 및 추방 기능 구현</li>
-                                        <li> 팀 매칭 시 자발적 참여를 위한 투표 기능 구현</li>
-                                    </ul>
+                            <h4>2020년 8월</h4>
+                            <h4 class="subheading">정보처리기사 자격증 취득</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            </br>
+                            현재도
+                            개발중..
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Contactme-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            
+            emailjs.init('user_2jWX8JQic9uedpbxcFe8F');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+              //  this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_glgra0o', 'template_4pm1j43', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <section class="section-padding wow fadeInUp delay-05s" id="contact">
+        <div class="container">
+            <div class="row white">
+                <div class="col-md-8 col-sm-12">
+                    <div class="section-title">
+                        <h2 class="head-title black">Contact Me</h2>
+                        <hr class="botm-line">
+                        <p class="sec-para black"></p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="col-md-4 col-sm-6" style="padding-left:0px;">
+                        <h3 class="cont-title">Email</h3>
+                        <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
 
-                                    <a href = "https://github.com/nrhys2005/SportsMatching" target = "blank" > github 링크 </a>
-                                    <br></br>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button" onClick="stopVideo1();">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
+                        <div class="contact-info">
+                            <form action="" method="post" role="form" class="contactForm" id="contact-form">
+                                <div class="form-group">
+                                    <input type="text" name="name to_name" class="form-control" id="name"
+                                        placeholder="Your Name" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email from_name" id="email"
+                                        placeholder="Your Email" data-rule="email"
+                                        data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message contact" rows="5" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <input type="submit" value="Send" class = "btn btn-primary">
                                 
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Pass Project</h2>
-                                    <p class="item-intro text-muted">딥러닝을 활용한 마스크 인식 차단기</p>
-                                    <img class="img-fluid d-block mx-auto" src="" alt="" />
-                                    <div id="video_slide2" style="position: relative; height:0; padding-bottom: 80.25%;">
-                                        <iframe width="560" height="315" class = "d-block" src="https://www.youtube.com/embed/DI6zLOwrGrU?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
-                                        </div>
-                                    <p>COVID-19 바이러스를 예방하는 데 필수적인 마스크를 인식하고 차단하는 작품 
-                                    </p>             
-                                    <ul class="list-inline">
-                                        <li> 3인 팀 작품</li>
-                                        <li> 소프트웨어, 하드웨어, 자료수집 역할 중 소프트웨어 개발 담당</li>
-                                        <li> 라즈베리파이4, Intel Neural Compute Stick 2, 스텝모터 등 사용</li>
-                                        <li> 서버없이 독립적인 하드웨어 구축</li>
-                                        <li> 언제 어디서나 쉽게 설치가 가능하며 휴대가 용이</li>
-                                        <li> 20fps 이상으로 인식하며 마스크 인식 정확도는 98%</li>
-                                        <li> MASK, NOMASK 두 가지 키워드로 인식하며 모터 제어</li>
-                                        <li> 비교적 저렴한 비용으로 활용 가능</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button" onClick="stopVideo2();" >
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">TAKE_PACK</h2>
-                                    <p class="item-intro text-muted">개인 프로젝트</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>소지품 정보를 지도 마커에 등록할 수 있는 안드로이드 앱 입니다.</p>
-                                    <ul class="list-inline">
-                                        <li> 개인 프로젝트</li>
-                                        <li> Android, Node.js, MySQL를 이용해 개발</li>
-                                        <li> 회원정보, 마커정보, 소지품목록 정보들을 데이터베이스에 저장</li>
-                                        <li> 맵 로드시 현재 위치가 포커스되는 기능 구현</li>
-                                        <li> 소지품을 등록할 수 있는 리스트 구현</li>
-                                        <li> 맵을 길게 터치 시 장소 및 소지품 목록의 정보들을 저장하는 마커등록 기능 구현</li>
-                                        <li> 일정 시간 마다 현재 위치와 마커위치를 비교 후 알람 및 진동이 울리게 하는 기능 구현</li>                                
-                                    </ul>
-                                    <a href = "https://github.com/Hyeonseok0830/Android_study" target = "blank" > github 링크 </a>
-                                    <br></br>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-         <!-- Modal 3-->
-         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">National Geographic</h2>
-                                    <p class="item-intro text-muted">C# 응용 프로그램</p>
-                                    <img class="img-fluid d-block mx-auto" src="" alt="" />
-                                    <div id="video_slide2" style="position: relative; height:0; padding-bottom: 80.25%;">
-                                        <iframe width="560" height="315" class = "d-block" src="https://www.youtube.com/embed/er4IDt__t9c?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
-                                        </div>
-                                    <p>각종 방해 요소들을 극복해 생존하는 C# 프로젝트 입니다.</p>
-                                    <ul class="list-inline">
-                                        <li> 개인 프로젝트</li>
-                                        <li> C# 언어와 MYSQL을 이용해 개발</li>
-                                        <li> 간단한 회원정보를 데이터베이스에 저장</li>
-                                        <li> 포만감, 정신, 체력의 상태를 가진 캐릭터</li>
-                                        <li> 시간이 흐를수록 포만감은 감소하며 밤이 되면 정신이 감소</li>
-                                        <li> 돼지를 잡아 고기를 얻어서 포만감과 체력을 채울 수 있음</li>
-                                        <li> 유령을 잡아 정신을 회복</li>
-                                        <li> 나무를 통해 장작 획득 가능</li>                                
-                                        <li> 돌이나 장작를 이용해 아이템 제작 기능</li>
-                                        <li> 장작을 통해 울타리를 지어 몬스터들로 부터 보호</li>
-                                        
-                                    </ul>
-                                    <a href = "https://github.com/Hyeonseok0830/Csharp_project" target = "blank" > github 링크 </a>
-                                    <br></br>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left"> © HyeonSeokWorld 2020</div>
+                <a class="nav-link js-scroll-trigger" href="#main">Main</a>
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact me</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Best_Matching</h2>
+                                <p class="item-intro text-muted">졸업 작품</p>
+                                <img class="img-fluid d-block mx-auto" src="" alt="" />
+                                <div id="video_slide1" style="position: relative; height:0; padding-bottom: 80.25%;">
+                                    <iframe width="560" height="315" class="d-block"
+                                        src="https://www.youtube.com/embed/ULOZ8Wsoma8?enablejsapi=1&version=3&playerapiid=ytplayer"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
                                 </div>
+                                <p>풋살 경기를 편리하게 매칭 해주는 안드로이드 앱 입니다.
+                                </p>
+
+                                <ul class="list-inline">
+                                    <li> 3인 팀 작품</li>
+                                    <li> Node.js, MySQL, Android를 이용해 개발</li>
+                                    <li> 회원관리, 지도, 매치, 팀, 고객센터 기능 중 팀과 고객센터 기능을 담당</li>
+                                    <li> 등록된 경기장을 예약할 수 있는 기능 구현</li>
+                                    <li> 지도 로드 시 현재 위치를 기준으로 가장 가까운 마커가 포커스 되는 기능 구현</li>
+                                    <li> 리스트로 경기장을 로드 시 가장 가까운 순으로 정렬되는 기능 구현</li>
+                                    <li> 매칭과 팀을 등록하고 검색 가능</li>
+                                    <li> 팀장, 팀원 기능을 구분하여 구현</li>
+                                    <li> 새로운 팀원 가입 수락 및 추방 기능 구현</li>
+                                    <li> 팀 매칭 시 자발적 참여를 위한 투표 기능 구현</li>
+                                </ul>
+
+                                <a href="https://github.com/nrhys2005/SportsMatching" target="blank"> github 링크 </a>
+                                <br></br>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"
+                                    onClick="stopVideo1();">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Pass Project</h2>
+                                <p class="item-intro text-muted">딥러닝을 활용한 마스크 인식 차단기</p>
+                                <img class="img-fluid d-block mx-auto" src="" alt="" />
+                                <div id="video_slide2" style="position: relative; height:0; padding-bottom: 80.25%;">
+                                    <iframe width="560" height="315" class="d-block"
+                                        src="https://www.youtube.com/embed/DI6zLOwrGrU?enablejsapi=1&version=3&playerapiid=ytplayer"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+                                </div>
+                                <p>COVID-19 바이러스를 예방하는 데 필수적인 마스크를 인식하고 차단하는 작품
+                                </p>
+                                <ul class="list-inline">
+                                    <li> 3인 팀 작품</li>
+                                    <li> 소프트웨어, 하드웨어, 자료수집 역할 중 소프트웨어 개발 담당</li>
+                                    <li> 라즈베리파이4, Intel Neural Compute Stick 2, 스텝모터 등 사용</li>
+                                    <li> 서버없이 독립적인 하드웨어 구축</li>
+                                    <li> 언제 어디서나 쉽게 설치가 가능하며 휴대가 용이</li>
+                                    <li> 20fps 이상으로 인식하며 마스크 인식 정확도는 98%</li>
+                                    <li> MASK, NOMASK 두 가지 키워드로 인식하며 모터 제어</li>
+                                    <li> 비교적 저렴한 비용으로 활용 가능</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"
+                                    onClick="stopVideo2();">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Image rotate JS-->
-        <script src="js/rotate.js"></script>
-    </body>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">TAKE_PACK</h2>
+                                <p class="item-intro text-muted">개인 프로젝트</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
+                                <p>소지품 정보를 지도 마커에 등록할 수 있는 안드로이드 앱 입니다.</p>
+                                <ul class="list-inline">
+                                    <li> 개인 프로젝트</li>
+                                    <li> Android, Node.js, MySQL를 이용해 개발</li>
+                                    <li> 회원정보, 마커정보, 소지품목록 정보들을 데이터베이스에 저장</li>
+                                    <li> 맵 로드시 현재 위치가 포커스되는 기능 구현</li>
+                                    <li> 소지품을 등록할 수 있는 리스트 구현</li>
+                                    <li> 맵을 길게 터치 시 장소 및 소지품 목록의 정보들을 저장하는 마커등록 기능 구현</li>
+                                    <li> 일정 시간 마다 현재 위치와 마커위치를 비교 후 알람 및 진동이 울리게 하는 기능 구현</li>
+                                </ul>
+                                <a href="https://github.com/Hyeonseok0830/Android_study" target="blank"> github 링크 </a>
+                                <br></br>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">National Geographic</h2>
+                                <p class="item-intro text-muted">C# 응용 프로그램</p>
+                                <img class="img-fluid d-block mx-auto" src="" alt="" />
+                                <div id="video_slide2" style="position: relative; height:0; padding-bottom: 80.25%;">
+                                    <iframe width="560" height="315" class="d-block"
+                                        src="https://www.youtube.com/embed/er4IDt__t9c?enablejsapi=1&version=3&playerapiid=ytplayer"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+                                </div>
+                                <p>각종 방해 요소들을 극복해 생존하는 C# 프로젝트 입니다.</p>
+                                <ul class="list-inline">
+                                    <li> 개인 프로젝트</li>
+                                    <li> C# 언어와 MYSQL을 이용해 개발</li>
+                                    <li> 간단한 회원정보를 데이터베이스에 저장</li>
+                                    <li> 포만감, 정신, 체력의 상태를 가진 캐릭터</li>
+                                    <li> 시간이 흐를수록 포만감은 감소하며 밤이 되면 정신이 감소</li>
+                                    <li> 돼지를 잡아 고기를 얻어서 포만감과 체력을 채울 수 있음</li>
+                                    <li> 유령을 잡아 정신을 회복</li>
+                                    <li> 나무를 통해 장작 획득 가능</li>
+                                    <li> 돌이나 장작를 이용해 아이템 제작 기능</li>
+                                    <li> 장작을 통해 울타리를 지어 몬스터들로 부터 보호</li>
+
+                                </ul>
+                                <a href="https://github.com/Hyeonseok0830/Csharp_project" target="blank"> github 링크 </a>
+                                <br></br>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Image rotate JS-->
+    <script src="js/rotate.js"></script>
+</body>
+
 </html>
