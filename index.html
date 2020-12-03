@@ -233,8 +233,11 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_glgra0o', 'template_4pm1j43', this)
                     .then(function () {
+                        alert("전송 완료");                       
                         console.log('SUCCESS!');
+                        document.getElementById('contact-form').reset()
                     }, function (error) {
+                        alert("전송 실패");
                         console.log('FAILED...', error);
                     });
             });
@@ -258,24 +261,24 @@
                         <div class="contact-info">
                             <form action="" method="post" role="form" class="contactForm" id="contact-form">
                                 <div class="form-group">
-                                    <input type="text" name="name to_name" class="form-control" id="name"
+                                    <input type="text" name="from_name" class="form-control" id="name"
                                         placeholder="Your Name" data-rule="minlen:4"
                                         data-msg="Please enter at least 4 chars" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email from_name" id="email"
+                                    <input type="email" class="form-control" name="from_email" id="email"
                                         placeholder="Your Email" data-rule="email"
                                         data-msg="Please enter a valid email" />
                                     <div class="validation"></div>
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message contact" rows="5" data-rule="required"
-                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message" id ="content"></textarea>
                                     <div class="validation"></div>
                                 </div>
-                                <input type="submit" value="Send" class = "btn btn-primary">
+                                <input type="submit" value="Send" class = "btn btn-primary" >
                                 
                             </form>
                         </div>
