@@ -202,7 +202,7 @@
 		this.animateScroll = function () {
 			var animateTime = this.defaults.animateTime;
 			var animateFunction = this.defaults.animateFunction;
-			var position = this.defaults.currentPosition * 109;
+			var position = this.defaults.currentPosition * 108;
 
 			this.defaults.container.style.webkitTransform = 'translateY(-' + position + '%)';
 			this.defaults.container.style.mozTransform = 'translateY(-' + position + '%)';
