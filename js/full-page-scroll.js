@@ -82,12 +82,12 @@
 		for (var i = 0; i < sections.length; i++) {
 			var li = document.createElement('li');
 			var a = document.createElement('a');
-		
-			a.setAttribute('href', '#' + i);			
+
+			a.setAttribute('href', '#' + i);
 			li.appendChild(a);
 			_self.ul.appendChild(li);
 		}
-
+		
 		this.ul.childNodes[0].firstChild.classList.add('active');
 
 		if (this.defaults.displayDots) {
@@ -203,7 +203,7 @@
 		this.animateScroll = function () {
 			var animateTime = this.defaults.animateTime;
 			var animateFunction = this.defaults.animateFunction;
-			var position = this.defaults.currentPosition * 94;
+			var position = this.defaults.currentPosition * 105;
 
 			this.defaults.container.style.webkitTransform = 'translateY(-' + position + '%)';
 			this.defaults.container.style.mozTransform = 'translateY(-' + position + '%)';
