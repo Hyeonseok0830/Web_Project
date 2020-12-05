@@ -48,19 +48,21 @@
     </nav>
     <!-- Masthead-->
 
- 
+
     <!-- Main-->
     <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
                   <script src='https://code.jquery.com/ui/1.10.4/jquery-ui.js'></script> -->
+    <!-- -->
+
+   
     <div id="main" class="scroll-container">
-        <section class="page-section bg-light section1">
-			<div>
-                <span></span>					
-                <header class="masthead">
-                </header>
-			</div>
-		</section>
-        
+        <section class="page-section section1">
+            <div>
+                <span></span>
+                <canvas id="cvs" style="margin-top: -80px; width: 100%; height: auto;"></canvas>
+            </div>
+        </section>
+
         <section class="page-section bg-light section2" id="main">
             <div class="container">
                 <span></span>
@@ -106,7 +108,7 @@
                                     alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Best_Matching</div>
+                                <div class="portfolio-caption-heading">Best Matching</div>
                                 <div class="portfolio-caption-subheading text-muted">안드로이드 앱</div>
                             </div>
                         </div>
@@ -149,7 +151,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">National</div>
+                                <div class="portfolio-caption-heading">National Geographic</div>
                                 <div class="portfolio-caption-subheading text-muted">C# 응용 프로그램</div>
                             </div>
                         </div>
@@ -171,8 +173,8 @@
                                 alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2015년 3월</h4>
-                                <h4 class="subheading">소프트웨어학과 입학</h4>
+                                <h4>1996년 8월 30일</h4>
+                                <h4 class="subheading">정 현 석</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted"></p>
@@ -205,7 +207,7 @@
                             </div>
                         </div>
                     </li> -->
-                    <li class="timeline-inverted">
+                    <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
                                 alt="" /></div>
                         <div class="timeline-panel">
@@ -220,12 +222,17 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                </br>
-                                현재도
-                                개발중..
-                            </h4>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
+                                alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+
+                                <h4>현재</h4>
+                                <h4 class="subheading">개발, 유지보수 중</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"></p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -258,76 +265,60 @@
                 });
             }
         </script>
-        <section class="page-section bg-light wow fadeInUp delay-05s section5" id="contact">
+        <section class="page-section bg-light section5" id="contact">
             <div class="container">
                 <span></span>
-                <div class="row white">
-                    <div class="col-md-8 col-sm-12">
-                        <div class="section-title">
-                            <h2 class="head-title black">Contact Me</h2>
-                            <hr class="botm-line">
-                            <p class="sec-para black"></p>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Me</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <h3 class="cont-title">메일 보내기</h3>
+                <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
+                <div class="contact-info">
+                    <form action="" method="post" role="form" class="contactForm" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="from_name" class="form-control" id="name" placeholder="Your Name"
+                                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
                         </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <div class="col-md-4 col-sm-6" style="padding-left:0px;">
-                            <h3 class="cont-title">Email</h3>
-                            <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
-
-                            <div class="contact-info">
-                                <form action="" method="post" role="form" class="contactForm" id="contact-form">
-                                    <div class="form-group">
-                                        <input type="text" name="from_name" class="form-control" id="name"
-                                            placeholder="Your Name" data-rule="minlen:4"
-                                            data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="from_email" id="email"
-                                            placeholder="Your Email" data-rule="email"
-                                            data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                            data-msg="Please write something for us" placeholder="Message"
-                                            id="content"></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                    <input type="submit" value="Send" class="btn btn-primary">
-
-                                </form>
-                            </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="from_email" id="email"
+                                placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
                         </div>
-
-                    </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                data-msg="Please write something for us" placeholder="Message" id="content"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <input type="submit" value="Send" class="btn btn-primary">
+                    </form>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <section class="page-section bg-light page-section bg-light section5 footer py-4" id="footer">
+        <section class="page-section bg-light page-section bg-light section6 footer py-4" id="footer">
             <div class="container">
                 <span></span>
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-left"> © HyeonSeokWorld 2020</div>
-                    <a class="nav-link js-scroll-trigger" href="#main">Main</a>
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact me</a>
+                    <a class="nav-link js-scroll-trigger" href="#0">Main</a>
+                    <a class="nav-link js-scroll-trigger" href="#1">Portfolio</a>
+                    <a class="nav-link js-scroll-trigger" href="#2">About</a>
+                    <a class="nav-link js-scroll-trigger" href="#3">Contact me</a>
                 </div>
             </div>
         </section>
     </div>
     <script src="js/full-page-scroll.js"></script>
-	<script type="text/javascript">
-		new fullScroll({
-			displayDots: true,
-			dotsPosition: 'left',
-			animateTime: 0.7,
-			animateFunction: 'ease'
-		});
-	</script>
+    <script type="text/javascript">
+        new fullScroll({
+            displayDots: true,
+            dotsPosition: 'left',
+            animateTime: 0.7,
+            animateFunction: 'ease'
+        });
+    </script>
     <!-- Footer
     <footer class="footer py-4">
 
@@ -346,7 +337,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here-->
                                 <h2 class="text-uppercase">Best_Matching</h2>
-                                <p class="item-intro text-muted">졸업 작품</p>
+                                <p class="item-intro text-muted">안드로이드 앱</p>
                                 <img class="img-fluid d-block mx-auto" src="" alt="" />
                                 <div id="video_slide1" style="position: relative; height:0; padding-bottom: 80.25%;">
                                     <iframe width="560" height="315" class="d-block"
@@ -398,7 +389,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here-->
                                 <h2 class="text-uppercase">Pass Project</h2>
-                                <p class="item-intro text-muted">딥러닝을 활용한 마스크 인식 차단기</p>
+                                <p class="item-intro text-muted">마스크 인식 차단기</p>
                                 <img class="img-fluid d-block mx-auto" src="" alt="" />
                                 <div id="video_slide2" style="position: relative; height:0; padding-bottom: 80.25%;">
                                     <iframe width="560" height="315" class="d-block"
@@ -444,7 +435,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here-->
                                 <h2 class="text-uppercase">TAKE_PACK</h2>
-                                <p class="item-intro text-muted">개인 프로젝트</p>
+                                <p class="item-intro text-muted">안드로이드 앱</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
                                 <p>소지품 정보를 지도 마커에 등록할 수 있는 안드로이드 앱 입니다.</p>
                                 <ul class="list-inline">
@@ -531,6 +522,66 @@
     <script src="js/scripts.js"></script>
     <!-- Image rotate JS-->
     <script src="js/rotate.js"></script>
+    <script>
+        // Get canvas
+        var cvs = document.getElementById('cvs');
+
+        // Canvas fills window
+        cvs.height = window.innerHeight;
+        cvs.width = window.innerWidth;
+
+        // Get canvas context
+        var ctx = cvs.getContext('2d');
+
+        // Set font, size & number of columns
+        var font = 'arial';
+        var fontSize = 10;
+        ctx.font = fontSize + 'px ' + font;
+        var cols = cvs.width / fontSize;
+
+        // Characters
+        var charSet;
+        charSet = '0123456789ABCDEF'; // Hex
+        charSet = charSet.split(''); // Convert string to array
+
+        // One drop per column, row set randomly
+        var drops = [];
+        for (var col = 0; col < cols; col++)
+            drops[col] = Math.floor(Math.random() * cvs.height);
+
+        // Call rain() every 25ms
+        setInterval(rain, 25);
+
+        function rain() {
+            // Background, black, translucent
+            /* This is key to the fade effect, clear the window with an alpha of 0.05, which doesn't clear it entirely but leaves existing text progressively dimmed with each subsequent call to rain()
+             */
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, cvs.width, cvs.height);
+
+            // For each column / drop
+            for (var col = 0; col < drops.length; col++) {
+                // Pick a random char
+                var char = charSet[Math.floor(Math.random() * charSet.length)];
+                // Pick a random colour
+                ctx.fillStyle = randColour();
+                // Draw the char
+                ctx.fillText(char, col * fontSize, drops[col] * fontSize);
+                // Randomly reset drop back to top row
+                if (Math.random() > 0.99)
+                    drops[col] = 0;
+
+                drops[col]++; // Move drop down a row
+            }
+        }
+
+        function randColour() {
+            return 'rgb(' +
+                Math.floor(Math.random() * 256) + ',' +
+                Math.floor(Math.random() * 256) + ',' +
+                Math.floor(Math.random() * 256) + ')';
+        }
+    </script>
 </body>
 
 </html>
