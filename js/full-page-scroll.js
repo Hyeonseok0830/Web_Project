@@ -82,7 +82,6 @@
 		for (var i = 0; i < sections.length; i++) {
 			var li = document.createElement('li');
 			var a = document.createElement('a');
-
 			a.setAttribute('href', '#' + i);
 			li.appendChild(a);
 			_self.ul.appendChild(li);
@@ -203,7 +202,7 @@
 		this.animateScroll = function () {
 			var animateTime = this.defaults.animateTime;
 			var animateFunction = this.defaults.animateFunction;
-			var position = this.defaults.currentPosition * 105;
+			var position = this.defaults.currentPosition * 106;
 
 			this.defaults.container.style.webkitTransform = 'translateY(-' + position + '%)';
 			this.defaults.container.style.mozTransform = 'translateY(-' + position + '%)';
