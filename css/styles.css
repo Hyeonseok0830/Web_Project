@@ -688,6 +688,7 @@ pre code {
 
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
+  height: auto;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
   margin-right: auto;
@@ -697,21 +698,25 @@ pre code {
 @media (min-width: 375px) {
   .container-sm, .container {
     max-width: 540px;
+    height: auto;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+    height: auto;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
+    height: auto;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
+    height: auto;
   }
 }
 .row {
@@ -10305,6 +10310,13 @@ header.masthead {
   .my-language{
     margin: 1rem 1rem 1rem 1rem;
     width: 16%;
+    height: auto;
+  }
+}
+@media(min-width: 1200px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 13%;
     height: auto;
   }
 }
