@@ -56,7 +56,8 @@ html {
   --color-textb: #fff;
   height: 100%;
   margin: 0;
-	padding: 0;
+  padding: 0;
+  
 }
 
 
@@ -5513,8 +5514,9 @@ a.close.disabled {
   overflow: hidden;
 }
 .modal-open .modal {
+  
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: auto !important
 }
 
 .modal {
@@ -10400,6 +10402,7 @@ header.masthead {
     margin-bottom: 0;
   }
 }
+
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;

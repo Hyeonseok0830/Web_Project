@@ -12,8 +12,7 @@
 		 * Main div
 		 * @type {Object}
 		 */
-		var main = document.getElementById('main');
-		
+		var main = document.getElementById('main');		
 		/**
 		 * Sections div
 		 * @type {Array}
@@ -127,6 +126,8 @@
 		
 		return this;
 	};	
+
+
 
 	/**
 	 * Build public functions

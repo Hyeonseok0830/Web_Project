@@ -5,11 +5,9 @@
     */
 (function ($) {
     "use strict"; // Start of use strict
-
-
-
-
     // Smooth scrolling using jQuery easing
+
+    
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
@@ -33,14 +31,10 @@
         }
     });
 
-
-
-
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
-
     // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
         target: "#mainNav",
@@ -67,7 +61,12 @@
         }, 10);
         
     });
-
+ 
+    $('.enable-scroll').click(()=>{
+   
+        console.log("닫기 클릭");
+    });
+   
     // $("#main").ready(function () {
     //     var length = $(".tag-len").length;
     //     var element = $("#main");
@@ -118,6 +117,11 @@ function stopVideo1() {
 
 function stopVideo2() {
     var div = document.getElementById("video_slide2");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+}
+function stopVideo4() {
+    var div = document.getElementById("video_slide4");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
     iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }

@@ -312,12 +312,13 @@
     </div>
     <script src="js/full-page-scroll.js"></script>
     <script type="text/javascript">
-        new fullScroll({
+        var s = new fullScroll({
             displayDots: true,
             dotsPosition: 'left',
             animateTime: 0.7,
             animateFunction: 'ease'
         });
+      
     </script>
     <!-- Footer
     <footer class="footer py-4">
@@ -329,7 +330,7 @@
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                <div class="close-modal enable-scroll" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"  onClick="stopVideo1();" />
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
@@ -364,7 +365,7 @@
 
                                 <a href="https://github.com/nrhys2005/SportsMatching" target="blank"> github 링크 </a>
                                 <br></br>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button"
+                                <button class="btn btn-primary enable-scroll" data-dismiss="modal" type="button"
                                     onClick="stopVideo1();">
                                     <i class="fas fa-times mr-1"></i>
                                     Close Project
@@ -381,7 +382,7 @@
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"   onClick="stopVideo2();"/>
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
@@ -461,11 +462,11 @@
         </div>
     </div>
 
-    <!-- Modal 3-->
+    <!-- Modal 4-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"   onClick="stopVideo4();" />
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
@@ -475,7 +476,7 @@
                                 <h2 class="text-uppercase">National Geographic</h2>
                                 <p class="item-intro text-muted">C# 응용 프로그램</p>
                                 <img class="img-fluid d-block mx-auto" src="" alt="" />
-                                <div id="video_slide2" style="position: relative; height:0; padding-bottom: 80.25%;">
+                                <div id="video_slide4" style="position: relative; height:0; padding-bottom: 80.25%;">
                                     <iframe width="560" height="315" class="d-block"
                                         src="https://www.youtube.com/embed/er4IDt__t9c?enablejsapi=1&version=3&playerapiid=ytplayer"
                                         frameborder="0"
@@ -498,7 +499,8 @@
                                 </ul>
                                 <a href="https://github.com/Hyeonseok0830/Csharp_project" target="blank"> github 링크 </a>
                                 <br></br>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"
+                                onClick="stopVideo4();">
                                     <i class="fas fa-times mr-1"></i>
                                     Close Project
                                 </button>
