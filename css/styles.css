@@ -1026,8 +1026,9 @@ pre code {
   }
 
   .col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 40%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    
   }
 
   .col-sm-7 {
@@ -10142,6 +10143,14 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px)
+{
+  .page-section h2.section-heading {
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
 .page-section h3.section-subheading {
   font-size: 1rem;
   font-weight: 400;
@@ -10322,6 +10331,63 @@ header.masthead {
     height: auto;
   }
 }
+@media(min-height: 360px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 5%;
+    height: auto;
+  }
+}
+@media(min-height: 480px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 7%;
+    height: auto;
+  }
+}
+@media(min-height: 540px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 8%;
+    height: auto;
+  }
+}
+@media(min-height: 620px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 10%;
+    height: auto;
+  }
+}
+@media(min-height: 685px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 10%;
+    height: auto;
+  }
+}
+@media(min-height: 760px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 13%;
+    height: auto;
+  }
+}
+@media(min-height: 800px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 21%;
+    height: auto;
+  }
+}
+@media(min-height: 830px){
+  .my-language{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 23%;
+    height: auto;
+  }
+}
+
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
@@ -10415,6 +10481,12 @@ header.masthead {
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
   line-height: 3rem;
+}
+@media(max-width: 330px){
+  .portfolio-modal .modal-content h2 {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
 }
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
